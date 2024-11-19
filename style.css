@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #e7e8ec;
+}
+nav {
+  height: 110px;
+  background-color: orangered;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topBar {
+  height: 30%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+.links {
+  height: 100%;
+  width: 65%;
+}
+.links ul,
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.bottomBar {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navLogo {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navSearch {
+  height: 65%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+}
+.navSearch input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 15px;
+}
+.searchIcon {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #ffbf80;
+}
+.navCart {
+  height: 80%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  width: 80%;
+  margin: auto;
+}
+.panel {
+  height: 400px;
+  width: 220px;
+  background-color: #ffe1d2;
+  display: flex;
+  flex-direction: column;
+}
+.panelBox1 {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.panelBox1 h3 {
+  font-size: 1.11rem;
+  font-weight: 500;
+  color: white;
+}
+.panelBox2 {
+  height: 50%;
+  width: 100%;
+  background-image: url(./assets/images/wallet_img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.panel_icon {
+  height: 20px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.panel_icon p {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  padding-top: 13px;
+}
+.panel_icon img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panelBox2 h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+.panel_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.panelBox3 {
+  height: 35%;
+  width: 100%;
+  display: flex;
+}
+.left_panel {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.left_panel p {
+  font-size: 0.865rem;
+  text-align: center;
+}
+.right_panel {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sale {
+  height: 180px;
+  width: 100%;
+  margin: auto;
+  background-image: url(./assets/images/sale_img.webp);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.head {
+  height: 50px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  margin: auto;
+}
+.head h3 {
+  font-size: 1.53rem;
+  font-weight:500;
+  margin-top: 20px;
+}
+.flashSale {
+  height: 50vh;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+}
+.flashTopbar {
+  height: 15%;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flashTopbar h3 {
+  font-size: 1.11rem;
+  font-weight: 500;
+  color: orangered;
+  padding-left: 10px;
+}
+.flashBottombar,
+button {
+  padding: 7px 15px;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  font-weight: 500;
+  color: orangered;
+  padding-right: 10px;
+}
+.flashBottombar {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flashCart {
+  height: 100%;
+  width: 16%;
+  border-radius: 5px;
+}
+.flashCartBox1{
+  height: 60%;
+  width: 100%;
+}
+.flashCartBox2{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1px;
+}
+.flashImg{
+  height: 100%;
+  width: 100%;
+}
+.flashHeadFont{
+  font-size: 0.90rem;
+  font-weight: 500;
+  line-height: 18px;
+  color: black;
+}
+.flashCartBox3{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.flashCartBox3 p{
+  padding-top: 15px;
+}
+.flashCartBox4{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.flashCartBox4 p{
+  padding-top: 15px;
+  color: black;
+}
+.categories{
+  height: 350px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: white;
+}
+.categoriesBox{
+  height: 50%;
+  width: 12.5%;
+  display: flex;
+  flex-direction: column;
+}
+.categoriesBoxBox1{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categoriesBoxBox1 img{
+  height: 100%;
+}
+.categoriesBoxBox2{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categoriesBoxBox2 h2{
+  font-size: 0.90rem;
+  font-weight: 500;
+}
+.main{
+  height: 100vh;
+  width: 80%;
+  border: 2px solid green;
+  margin: auto;
+}
+.carts{
+  height: 340px;
+  width: 16%;
+  border: 2px solid green;
+}
+.carts{
+  height: 280px;
+  width: 16%;
+  border: 2px solid red;
+}
