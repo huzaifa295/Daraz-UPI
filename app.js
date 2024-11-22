@@ -601,3 +601,100 @@ footPanel1.appendChild(footPanel1Box1)
 footPanel1Box2.appendChild(panelBox2Container1)
 footPanel1Box2.appendChild(panelBox2Container2)
 footPanel1.appendChild(footPanel1Box2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var footPanel2=document.getElementById('footPanel2')
+footPanel2.setAttribute('class','footPanel1')
+
+var footPanel2Box1=document.createElement('div')
+footPanel2Box1.setAttribute('class','footPanel1Box1')
+
+var panel2Box1Container1=document.createElement('div')
+panel2Box1Container1.setAttribute('class','panelBox1Container1')
+var panel2Container1Head=document.createElement('h3')
+var panel2Container1HeadText=document.createTextNode('Daraz International')
+
+panel2Container1Head.appendChild(panel2Container1HeadText)
+panel2Box1Container1.appendChild(panel2Container1Head)
+
+var panel2Box1Container2=document.createElement('div')
+panel2Box1Container2.setAttribute('class','panelBox1Container2')
+
+Panel2Box1Container2Img1=document.createElement('img')
+Panel2Box1Container2Img1.setAttribute('src','assets/images/flag1.png')
+
+Panel2Box1Container2Img2=document.createElement('img')
+Panel2Box1Container2Img2.setAttribute('src','assets/images/flag2.png')
+
+Panel2Box1Container2Img3=document.createElement('img')
+Panel2Box1Container2Img3.setAttribute('src','assets/images/flag3.png')
+
+Panel2Box1Container2Img4=document.createElement('img')
+Panel2Box1Container2Img4.setAttribute('src','assets/images/flag4.png')
+
+Panel2Box1Container2Img5=document.createElement('img')
+Panel2Box1Container2Img5.setAttribute('src','assets/images/flag5.png')
+
+
+panel2Box1Container2.appendChild(Panel2Box1Container2Img1)
+panel2Box1Container2.appendChild(Panel2Box1Container2Img2)
+panel2Box1Container2.appendChild(Panel2Box1Container2Img3)
+panel2Box1Container2.appendChild(Panel2Box1Container2Img4)
+panel2Box1Container2.appendChild(Panel2Box1Container2Img5)
+
+
+var footPanel2Box2=document.createElement('div')
+footPanel2Box2.setAttribute('class','footPanel1Box2')
+
+var panel2Box2Container1=document.createElement('div')
+panel2Box2Container1.setAttribute('class','panelBox2Container1')
+
+var panel2Container2Head=document.createElement('h3')
+var panel2Container2HeadText=document.createTextNode('Follow Us')
+
+panel2Container2Head.appendChild(panel2Container2HeadText)
+panel2Box2Container1.appendChild(panel2Container2Head)
+
+var panel2Box2Container2=document.createElement('div')
+panel2Box2Container2.setAttribute('class','panelBox2Container2')
+
+var panel2Box2Container2Img1=document.createElement('img')
+panel2Box2Container2Img1.setAttribute('src','assets/images/follow_img1.png')
+
+var panel2Box2Container2Img2=document.createElement('img')
+panel2Box2Container2Img2.setAttribute('src','assets/images/follow_img2.png')
+
+var panel2Box2Container2Img3=document.createElement('img')
+panel2Box2Container2Img3.setAttribute('src','assets/images/follow_img3.png')
+
+var panel2Box2Container2Img4=document.createElement('img')
+panel2Box2Container2Img4.setAttribute('src','assets/images/follow_img4.png')
+
+var panel2Box2Container2Img5=document.createElement('img')
+panel2Box2Container2Img5.setAttribute('src','assets/images/follow_img5.png')
+
+panel2Box2Container2.appendChild(panel2Box2Container2Img1)
+panel2Box2Container2.appendChild(panel2Box2Container2Img2)
+panel2Box2Container2.appendChild(panel2Box2Container2Img3)
+panel2Box2Container2.appendChild(panel2Box2Container2Img4)
+panel2Box2Container2.appendChild(panel2Box2Container2Img5)
+
+footPanel2Box1.appendChild(panel2Box1Container1)
+footPanel2Box1.appendChild(panel2Box1Container2)
+footPanel2.appendChild(footPanel2Box1)
+
+footPanel2Box2.appendChild(panel2Box2Container1)
+footPanel2Box2.appendChild(panel2Box2Container2)
+footPanel2.appendChild(footPanel2Box2)
