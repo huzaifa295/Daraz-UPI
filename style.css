@@ -33,6 +33,7 @@ li {
   font-size: 0.85rem;
   font-weight: 400;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .bottomBar {
   height: 70%;
@@ -46,6 +47,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .navSearch {
   height: 65%;
@@ -70,6 +72,7 @@ li {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #ffbf80;
+  cursor: pointer;
 }
 .navCart {
   height: 80%;
@@ -77,6 +80,9 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.navCart svg{
+  cursor: pointer;
 }
 .banner {
   width: 80%;
@@ -182,8 +188,11 @@ li {
   margin-top: 15px;
   margin-bottom: 20px;
 }
+.sale img{
+  cursor: pointer;
+}
 .head {
-  height: 50px;
+  height: 90px;
   width: 80%;
   display: flex;
   align-items: center;
@@ -192,7 +201,7 @@ li {
   margin: auto;
 }
 .head h3 {
-  font-size: 1.53rem;
+  font-size: 1.73rem;
   font-weight:500;
   margin-top: 20px;
 }
@@ -237,6 +246,12 @@ button {
   height: 100%;
   width: 16%;
   border-radius: 5px;
+}
+.flashCart:hover{
+  border: 0.5px solid gray;
+  box-shadow: 0 0 10px black;
+  padding: 12px;
+  cursor: pointer;
 }
 .flashCartBox1{
   height: 60%;
@@ -293,6 +308,12 @@ button {
   display: flex;
   flex-direction: column;
 }
+.categoriesBox:hover{
+  border: 0.5px solid gray;
+  box-shadow: 0 0 10px black;
+  padding: 2px;
+  cursor: pointer;
+}
 .categoriesBoxBox1{
   height: 70%;
   width: 100%;
@@ -315,18 +336,141 @@ button {
   font-weight: 500;
 }
 .main{
-  height: 100vh;
   width: 80%;
-  border: 2px solid green;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 18px;
 }
 .carts{
-  height: 340px;
+  height: 40vh;
   width: 16%;
-  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
 }
-.carts{
-  height: 280px;
-  width: 16%;
-  border: 2px solid red;
+.carts:hover{
+  border: 0.5px solid gray;
+  box-shadow: 0 0 10px black;
+  padding: 12px;
+  cursor: pointer;
+}
+.cartBox1{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cartBox1 img{
+  height: 100%;
+}
+.cartBox2{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cartBox2 h3{
+  font-size: 0.95rem;
+  line-height: 18px;
+  font-weight: 600;
+}
+.cartBox3{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cartBox3 p{
+  padding-top: 14px;
+  font-weight: 500;
+  color: orangered;
+}
+.cartBox4{
+  height:10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cartBox4 img{
+  height: 80%;
+}
+.loadMore{
+  height: 130px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loadMore button{
+  padding: 12px 140px;
+  border: 1px solid #1a9cb8;
+  color: #1a9cb8;
+  border-radius: 1px;
+  text-transform: uppercase;
+}
+.footPanel1{
+  height: 150px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.footPanel1Box1{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.panelBox1Container1{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.panelBox1Container1 h3{
+  font-size: 1.34rem;
+  font-weight: 400;
+}
+.panelBox1Container2{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.panelBox1Container2 img{
+  height: 30px;
+}
+.footPanel1Box2{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.panelBox2Container1{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.panelBox2Container1 h3{
+  font-size: 1.34rem;
+  font-weight: 400;
+}
+.panelBox2Container2{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.panelBox2Container2 img{
+  height: 30px;
 }

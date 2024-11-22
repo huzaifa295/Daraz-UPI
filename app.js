@@ -230,7 +230,7 @@ var CartsObj=[
     },
     {
         img:'assets/images/main_img11.webp',
-        content:'',
+        content:'Air Buds Pro || Wireless',
         price:'Rs.763',
         rating:'assets/images/rating_stars.png'
     },
@@ -278,5 +278,326 @@ var CartsObj=[
     },
 ]
 
-var main=document.getElementById('main')
-var carts=document.createElement('div')
+for(var i=0;i<CartsObj.length;i++){
+
+    var main=document.getElementById('main')
+    var carts=document.createElement('div')
+    carts.setAttribute('class','carts')
+    var cartBox1=document.createElement('div')
+    cartBox1.setAttribute('class','cartBox1')
+    
+    var cartImg=document.createElement('img')
+    cartImg.setAttribute('src',CartsObj[i].img)
+    
+    var cartBox2=document.createElement('div')
+    cartBox2.setAttribute('class','cartBox2')
+    
+    var CartContent=document.createElement('h3')
+    var CartContentText=document.createTextNode(CartsObj[i].content)
+    
+    var cartBox3=document.createElement('div')
+    cartBox3.setAttribute('class','cartBox3')
+    
+    var cartPrice=document.createElement('p')
+    var cartPriceText=document.createTextNode(CartsObj[i].price)
+    
+    var cartBox4=document.createElement('div')
+    cartBox4.setAttribute('class','cartBox4')
+    
+    var cartRating=document.createElement('img')
+    cartRating.setAttribute('src',CartsObj[i].rating)
+    
+    cartBox1.appendChild(cartImg)
+    carts.appendChild(cartBox1)
+    CartContent.appendChild(CartContentText)
+    cartBox2.appendChild(CartContent)
+    carts.appendChild(cartBox2)
+    cartPrice.appendChild(cartPriceText)
+    cartBox3.appendChild(cartPrice)
+    carts.appendChild(cartBox3)
+    cartBox4.appendChild(cartRating)
+    carts.appendChild(cartBox4)
+    main.appendChild(carts)
+    
+}
+
+var moreCartsObj=[
+    {
+        img:'assets/images/main_img19.webp',
+        content:'Printed Men Track Suit',
+        price:'Rs.863',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img20.webp',
+        content:"Wardrobe dino bag for multi purpose random",
+        price:'Rs.119',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img21.webp',
+        content:'LADIES GOLDEN CHAIN WATCH',
+        price:'Rs.570',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img22.webp',
+        content:'BINBOND Top Brand Luxury Man Wristwatch',
+        price:'Rs.2,499',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img23.webp',
+        content:'DECORA 3D Wooden Wall Hanging 3D Laser Cut',
+        price:'Rs.165',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img24.webp',
+        content:"Men's Hoodie High quality imported",
+        price:'Rs.865',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img25.webp',
+        content:'Stylish Pumps shoes for Ladies|Imported shoes',
+        price:'Rs.739',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img26.webp',
+        content:'Air 31 Air pro bluetooth handfree i7s TWS',
+        price:'Rs.792',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img27.webp',
+        content:'Face Value 5ml Perfume Automizer Spray Bottle ',
+        price:'Rs.115',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img28.webp',
+        content:'SHERICE Self Adhesive Black Marble Sheet',
+        price:'Rs.358',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img29.webp',
+        content:'Remote Controlled Fast Modern Car 3D Light',
+        price:'Rs.863',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img30.webp',
+        content:'100 Moringa Capsules | Best for weight Loss',
+        price:'Rs.310',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img31.webp',
+        content:"Cafe racer kit deal of 3 Item's Headlight",
+        price:'Rs.860',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img32.webp',
+        content:'100% Imported Branded Watch for Men and Boys',
+        price:'Rs.331',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img33.webp',
+        content:'Orignal TWS Airpods with Super Sound & High',
+        price:'Rs.895',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img34.webp',
+        content:'Miss Lara - Natural Cheek Tint Liquid Blush Soft',
+        price:'Rs.359',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img35.webp',
+        content:'Kitchen Trash Bag and Towel Rack Holder',
+        price:'Rs.111',
+        rating:'assets/images/rating_stars.png'
+    },
+    {
+        img:'assets/images/main_img36.webp',
+        content:'Pack Of 3 - Amazing Shoe Rack Shoe Shelf',
+        price:'Rs.595',
+        rating:'assets/images/rating_stars.png'
+    },
+]
+ function loadMore(){
+
+    for(var i=0;i<CartsObj.length;i++){
+
+        var main=document.getElementById('main')
+        var carts=document.createElement('div')
+        carts.setAttribute('class','carts')
+        var cartBox1=document.createElement('div')
+        cartBox1.setAttribute('class','cartBox1')
+        
+        var cartImg=document.createElement('img')
+        cartImg.setAttribute('src',moreCartsObj[i].img)
+        
+        var cartBox2=document.createElement('div')
+        cartBox2.setAttribute('class','cartBox2')
+        
+        var CartContent=document.createElement('h3')
+        var CartContentText=document.createTextNode(moreCartsObj[i].content)
+        
+        var cartBox3=document.createElement('div')
+        cartBox3.setAttribute('class','cartBox3')
+        
+        var cartPrice=document.createElement('p')
+        var cartPriceText=document.createTextNode(moreCartsObj[i].price)
+        
+        var cartBox4=document.createElement('div')
+        cartBox4.setAttribute('class','cartBox4')
+        
+        var cartRating=document.createElement('img')
+        cartRating.setAttribute('src',moreCartsObj[i].rating)
+        
+        cartBox1.appendChild(cartImg)
+        carts.appendChild(cartBox1)
+        CartContent.appendChild(CartContentText)
+        cartBox2.appendChild(CartContent)
+        carts.appendChild(cartBox2)
+        cartPrice.appendChild(cartPriceText)
+        cartBox3.appendChild(cartPrice)
+        carts.appendChild(cartBox3)
+        cartBox4.appendChild(cartRating)
+        carts.appendChild(cartBox4)
+        main.appendChild(carts)
+        
+    }
+
+    for(var i=0;i<CartsObj.length;i++){
+
+        var main=document.getElementById('main')
+        var carts=document.createElement('div')
+        carts.setAttribute('class','carts')
+        var cartBox1=document.createElement('div')
+        cartBox1.setAttribute('class','cartBox1')
+        
+        var cartImg=document.createElement('img')
+        cartImg.setAttribute('src',CartsObj[i].img)
+        
+        var cartBox2=document.createElement('div')
+        cartBox2.setAttribute('class','cartBox2')
+        
+        var CartContent=document.createElement('h3')
+        var CartContentText=document.createTextNode(CartsObj[i].content)
+        
+        var cartBox3=document.createElement('div')
+        cartBox3.setAttribute('class','cartBox3')
+        
+        var cartPrice=document.createElement('p')
+        var cartPriceText=document.createTextNode(CartsObj[i].price)
+        
+        var cartBox4=document.createElement('div')
+        cartBox4.setAttribute('class','cartBox4')
+        
+        var cartRating=document.createElement('img')
+        cartRating.setAttribute('src',CartsObj[i].rating)
+        
+        cartBox1.appendChild(cartImg)
+        carts.appendChild(cartBox1)
+        CartContent.appendChild(CartContentText)
+        cartBox2.appendChild(CartContent)
+        carts.appendChild(cartBox2)
+        cartPrice.appendChild(cartPriceText)
+        cartBox3.appendChild(cartPrice)
+        carts.appendChild(cartBox3)
+        cartBox4.appendChild(cartRating)
+        carts.appendChild(cartBox4)
+        main.appendChild(carts)
+        
+    }
+}
+
+var footPanel1=document.getElementById('footPanel1')
+footPanel1.setAttribute('class','footPanel1')
+
+var footPanel1Box1=document.createElement('div')
+footPanel1Box1.setAttribute('class','footPanel1Box1')
+
+var panelBox1Container1=document.createElement('div')
+panelBox1Container1.setAttribute('class','panelBox1Container1')
+var panelContainer1Head=document.createElement('h3')
+var panelContainer1HeadText=document.createTextNode('Payment Methods')
+
+panelContainer1Head.appendChild(panelContainer1HeadText)
+panelBox1Container1.appendChild(panelContainer1Head)
+
+var panelBox1Container2=document.createElement('div')
+panelBox1Container2.setAttribute('class','panelBox1Container2')
+
+Box1Container2Img1=document.createElement('img')
+Box1Container2Img1.setAttribute('src','assets/images/pament_img1.png')
+
+Box1Container2Img2=document.createElement('img')
+Box1Container2Img2.setAttribute('src','assets/images/pament_img2.png')
+
+Box1Container2Img3=document.createElement('img')
+Box1Container2Img3.setAttribute('src','assets/images/pament_img3.png')
+
+Box1Container2Img4=document.createElement('img')
+Box1Container2Img4.setAttribute('src','assets/images/pament_img4.png')
+
+Box1Container2Img5=document.createElement('img')
+Box1Container2Img5.setAttribute('src','assets/images/pament_img5.png')
+
+Box1Container2Img6=document.createElement('img')
+Box1Container2Img6.setAttribute('src','assets/images/pament_img6.png')
+
+Box1Container2Img7=document.createElement('img')
+Box1Container2Img7.setAttribute('src','assets/images/pament_img7.png')
+
+Box1Container2Img8=document.createElement('img')
+Box1Container2Img8.setAttribute('src','assets/images/pament_img8.png')
+
+Box1Container2Img9=document.createElement('img')
+Box1Container2Img9.setAttribute('src','assets/images/pament_img9.png')
+
+panelBox1Container2.appendChild(Box1Container2Img1)
+panelBox1Container2.appendChild(Box1Container2Img2)
+panelBox1Container2.appendChild(Box1Container2Img3)
+panelBox1Container2.appendChild(Box1Container2Img4)
+panelBox1Container2.appendChild(Box1Container2Img5)
+panelBox1Container2.appendChild(Box1Container2Img6)
+panelBox1Container2.appendChild(Box1Container2Img7)
+panelBox1Container2.appendChild(Box1Container2Img8)
+panelBox1Container2.appendChild(Box1Container2Img9)
+
+var footPanel1Box2=document.createElement('div')
+footPanel1Box2.setAttribute('class','footPanel1Box2')
+
+var panelBox2Container1=document.createElement('div')
+panelBox2Container1.setAttribute('class','panelBox2Container1')
+
+var panelContainer2Head=document.createElement('h3')
+var panelContainer2HeadText=document.createTextNode('Verified by')
+
+panelContainer2Head.appendChild(panelContainer2HeadText)
+panelBox2Container1.appendChild(panelContainer2Head)
+
+var panelBox2Container2=document.createElement('div')
+panelBox2Container2.setAttribute('class','panelBox2Container2')
+
+var panelBox2Container2Img=document.createElement('img')
+panelBox2Container2Img.setAttribute('src','assets/images/verified_img1.png')
+
+panelBox2Container2.appendChild(panelBox2Container2Img)
+
+footPanel1Box1.appendChild(panelBox1Container1)
+footPanel1Box1.appendChild(panelBox1Container2)
+footPanel1.appendChild(footPanel1Box1)
+
+footPanel1Box2.appendChild(panelBox2Container1)
+footPanel1Box2.appendChild(panelBox2Container2)
+footPanel1.appendChild(footPanel1Box2)
